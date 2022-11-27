@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\CommandsService",
-    "\\CommandsService\\Data"
+    "\\CommandsService\\Data",
+    "\\K8S",
+    "\\PlatformService"
   ],
+  "SelectedNode": "\\PlatformService",
   "PreviewInSolutionExplorer": false
 }
