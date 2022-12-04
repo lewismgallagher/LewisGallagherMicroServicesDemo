@@ -65,3 +65,10 @@ C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsSer
 C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\obj\Debug\net6.0\CommandsService.dll
 C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\obj\Debug\net6.0\refint\CommandsService.dll
 C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\obj\Debug\net6.0\CommandsService.pdb
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\appsettings.Production.json
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\CommandsService.deps.json
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\CommandsService.runtimeconfig.json
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\CommandsService.pdb
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\obj\Debug\net6.0\CommandsService.genruntimeconfig.cache
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\obj\Debug\net6.0\ref\CommandsService.dll

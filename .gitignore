@@ -19,3 +19,17 @@
 .vs/slnx.sqlite
 *.v5
 *.v5
+*.v2
+CommandsService/.vs/CommandsService/DesignTimeBuild/.dtbcache.v2
+*.vsidx
+CommandsService/.vs/CommandsService/FileContentIndex/ffe76bf3-b76c-4d34-a0df-045a3a68cba4.vsidx
+CommandsService/.vs/ProjectEvaluation/commandsservice.metadata.v5
+CommandsService/.vs/ProjectEvaluation/commandsservice.projects.v5
+CommandsService/obj/project.assets.json
+CommandsService/obj/Debug/net6.0/CommandsService.csproj.FileListAbsolute.txt
+*.sentinel
+CommandsService/obj/staticwebassets.pack.sentinel
+CommandsService/obj/project.assets.json
+CommandsService/obj/CommandsService.csproj.nuget.dgspec.json
+CommandsService/bin/Debug/net6.0/CommandsService.runtimeconfig.json
+CommandsService/obj/staticwebassets.pack.sentinel
