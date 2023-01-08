@@ -33,3 +33,4 @@ CommandsService/obj/project.assets.json
 CommandsService/obj/CommandsService.csproj.nuget.dgspec.json
 CommandsService/bin/Debug/net6.0/CommandsService.runtimeconfig.json
 CommandsService/obj/staticwebassets.pack.sentinel
+.vs/slnx.sqlite
