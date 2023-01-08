@@ -49,6 +49,20 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "Google.protobuf": {
+              "target": "Package",
+              "version": "[3.21.12, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.51.0, )"
+            },
+            "Grpc.net.client": {
+              "target": "Package",
+              "version": "[2.51.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

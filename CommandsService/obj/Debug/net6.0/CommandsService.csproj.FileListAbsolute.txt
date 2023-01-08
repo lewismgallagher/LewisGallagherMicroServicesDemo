@@ -72,3 +72,7 @@ C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsSer
 C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\RabbitMQ.Client.dll
 C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\obj\Debug\net6.0\CommandsService.genruntimeconfig.cache
 C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\obj\Debug\net6.0\ref\CommandsService.dll
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\Grpc.Core.Api.dll
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\Grpc.Net.Client.dll
+C:\Users\lewis\Documents\coding stuff\source\BitBucket\MicroServices\CommandsService\bin\Debug\net6.0\Grpc.Net.Common.dll

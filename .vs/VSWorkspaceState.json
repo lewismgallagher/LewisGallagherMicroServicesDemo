@@ -2,10 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\CommandsService",
-    "\\CommandsService\\Data",
-    "\\K8S",
-    "\\PlatformService"
+    "\\CommandsService\\Protos",
+    "\\CommandsService\\SyncDataServices",
+    "\\CommandsService\\SyncDataServices\\Grpc",
+    "\\PlatformService",
+    "\\PlatformService\\Properties",
+    "\\PlatformService\\Protos",
+    "\\PlatformService\\SyncDataServices",
+    "\\PlatformService\\SyncDataServices\\Grpc"
   ],
-  "SelectedNode": "\\PlatformService\\obj",
+  "SelectedNode": "\\PlatformService\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }
