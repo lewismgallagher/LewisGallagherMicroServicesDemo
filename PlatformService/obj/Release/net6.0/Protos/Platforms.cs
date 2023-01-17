@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace PlatformService.Protos {
+namespace PlatformService {
 
   /// <summary>Holder for reflection information generated from Protos/platforms.proto</summary>
   public static partial class PlatformsReflection {
@@ -29,14 +29,14 @@ namespace PlatformService.Protos {
             "GAIgASgJEhEKCXB1Ymxpc2hlchgDIAEoCSI4ChBQbGF0Zm9ybVJlc3BvbnNl",
             "EiQKCHBsYXRmb3JtGAEgAygLMhIuR3JwY1BsYXRmb3JtTW9kZWwyRAoMR3Jw",
             "Y1BsYXRmb3JtEjQKD0dldEFsbFBsYXRmb3JtcxIOLkdldEFsbFJlcXVlc3Qa",
-            "ES5QbGF0Zm9ybVJlc3BvbnNlQhmqAhZQbGF0Zm9ybVNlcnZpY2UuUHJvdG9z",
-            "YgZwcm90bzM="));
+            "ES5QbGF0Zm9ybVJlc3BvbnNlQhKqAg9QbGF0Zm9ybVNlcnZpY2ViBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PlatformService.Protos.GetAllRequest), global::PlatformService.Protos.GetAllRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PlatformService.Protos.GrpcPlatformModel), global::PlatformService.Protos.GrpcPlatformModel.Parser, new[]{ "PlatformId", "Name", "Publisher" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PlatformService.Protos.PlatformResponse), global::PlatformService.Protos.PlatformResponse.Parser, new[]{ "Platform" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PlatformService.GetAllRequest), global::PlatformService.GetAllRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PlatformService.GrpcPlatformModel), global::PlatformService.GrpcPlatformModel.Parser, new[]{ "PlatformId", "Name", "Publisher" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PlatformService.PlatformResponse), global::PlatformService.PlatformResponse.Parser, new[]{ "Platform" }, null, null, null, null)
           }));
     }
     #endregion
@@ -57,7 +57,7 @@ namespace PlatformService.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PlatformService.Protos.PlatformsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::PlatformService.PlatformsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -209,7 +209,7 @@ namespace PlatformService.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PlatformService.Protos.PlatformsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::PlatformService.PlatformsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -472,7 +472,7 @@ namespace PlatformService.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PlatformService.Protos.PlatformsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::PlatformService.PlatformsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -504,12 +504,12 @@ namespace PlatformService.Protos {
 
     /// <summary>Field number for the "platform" field.</summary>
     public const int PlatformFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::PlatformService.Protos.GrpcPlatformModel> _repeated_platform_codec
-        = pb::FieldCodec.ForMessage(10, global::PlatformService.Protos.GrpcPlatformModel.Parser);
-    private readonly pbc::RepeatedField<global::PlatformService.Protos.GrpcPlatformModel> platform_ = new pbc::RepeatedField<global::PlatformService.Protos.GrpcPlatformModel>();
+    private static readonly pb::FieldCodec<global::PlatformService.GrpcPlatformModel> _repeated_platform_codec
+        = pb::FieldCodec.ForMessage(10, global::PlatformService.GrpcPlatformModel.Parser);
+    private readonly pbc::RepeatedField<global::PlatformService.GrpcPlatformModel> platform_ = new pbc::RepeatedField<global::PlatformService.GrpcPlatformModel>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::PlatformService.Protos.GrpcPlatformModel> Platform {
+    public pbc::RepeatedField<global::PlatformService.GrpcPlatformModel> Platform {
       get { return platform_; }
     }
 

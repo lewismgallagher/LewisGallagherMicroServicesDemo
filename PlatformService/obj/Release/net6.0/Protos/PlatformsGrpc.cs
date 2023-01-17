@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace PlatformService.Protos {
+namespace PlatformService {
   public static partial class GrpcPlatform
   {
     static readonly string __ServiceName = "GrpcPlatform";
@@ -46,12 +46,12 @@ namespace PlatformService.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::PlatformService.Protos.GetAllRequest> __Marshaller_GetAllRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PlatformService.Protos.GetAllRequest.Parser));
+    static readonly grpc::Marshaller<global::PlatformService.GetAllRequest> __Marshaller_GetAllRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PlatformService.GetAllRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::PlatformService.Protos.PlatformResponse> __Marshaller_PlatformResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PlatformService.Protos.PlatformResponse.Parser));
+    static readonly grpc::Marshaller<global::PlatformService.PlatformResponse> __Marshaller_PlatformResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PlatformService.PlatformResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::PlatformService.Protos.GetAllRequest, global::PlatformService.Protos.PlatformResponse> __Method_GetAllPlatforms = new grpc::Method<global::PlatformService.Protos.GetAllRequest, global::PlatformService.Protos.PlatformResponse>(
+    static readonly grpc::Method<global::PlatformService.GetAllRequest, global::PlatformService.PlatformResponse> __Method_GetAllPlatforms = new grpc::Method<global::PlatformService.GetAllRequest, global::PlatformService.PlatformResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllPlatforms",
@@ -61,7 +61,7 @@ namespace PlatformService.Protos {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::PlatformService.Protos.PlatformsReflection.Descriptor.Services[0]; }
+      get { return global::PlatformService.PlatformsReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of GrpcPlatform</summary>
@@ -69,7 +69,7 @@ namespace PlatformService.Protos {
     public abstract partial class GrpcPlatformBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::PlatformService.Protos.PlatformResponse> GetAllPlatforms(global::PlatformService.Protos.GetAllRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::PlatformService.PlatformResponse> GetAllPlatforms(global::PlatformService.GetAllRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -92,7 +92,7 @@ namespace PlatformService.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, GrpcPlatformBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetAllPlatforms, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PlatformService.Protos.GetAllRequest, global::PlatformService.Protos.PlatformResponse>(serviceImpl.GetAllPlatforms));
+      serviceBinder.AddMethod(__Method_GetAllPlatforms, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PlatformService.GetAllRequest, global::PlatformService.PlatformResponse>(serviceImpl.GetAllPlatforms));
     }
 
   }

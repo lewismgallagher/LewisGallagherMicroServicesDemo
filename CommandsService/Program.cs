@@ -7,17 +7,20 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMem"));
+builder.Services.AddScoped<ICommandRepo, CommandRepo>();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMem"));
-builder.Services.AddSingleton<IEventProcessor, EventProcessor>();
+
 builder.Services.AddHostedService<MessageBusSubscriber>();
-builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<ICommandRepo, CommandRepo>();
+
+builder.Services.AddSingleton<IEventProcessor, EventProcessor>();
 builder.Services.AddScoped<IPlatformDataClient, PlatformDataClient>();
+
+builder.Services.AddSwaggerGen();
+
 
 
 
@@ -30,11 +33,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
+
+app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.UseEndpoints(enpoints =>
+{
+    enpoints.MapControllers();
+});
+
 
 PrepDb.PrepPopulation(app);
 

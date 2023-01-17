@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using CommandsService.Models;
-using CommandsService.Protos;
 using Grpc.Net.Client;
+using PlatformService;
 using System.ComponentModel;
 
 namespace CommandsService.SyncDataServices.Grpc
@@ -20,8 +20,7 @@ namespace CommandsService.SyncDataServices.Grpc
         public IEnumerable<Platform> ReturnAllPlatforms()
         {
             Console.WriteLine($"--> Calling GRPC Service {_configuration["GrpcPlatform"]}");
-            var poop = _configuration["GrpcPlatform"];
-            var channel = GrpcChannel.ForAddress("GrpcPlatform");
+            var channel = GrpcChannel.ForAddress(_configuration["GrpcPlatform"]);
             var client = new GrpcPlatform.GrpcPlatformClient(channel);
             var request = new GetAllRequest();
 

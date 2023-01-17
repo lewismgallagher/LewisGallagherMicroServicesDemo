@@ -1,7 +1,7 @@
 using AutoMapper;
 using PlatformService.Dtos;
 using PlatformService.Protos;
-using PLatformService.Models;
+using PlatformService.Models;
 
 namespace PlatformService.Profiles
 {

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "CommandsService.Protos";
+option csharp_namespace = "PlatformService";
 
 service GrpcPlatform{
 	rpc GetAllPlatforms (GetAllRequest) returns (PlatformResponse);

@@ -2,16 +2,16 @@ using Microsoft.EntityFrameworkCore;
 using PlatformService.AsyncDataServices;
 using PlatformService.SyncDataServices.Grpc;
 using PlatformService.SyncDataServices.Http;
-using PLatformService.Data;
+using PlatformService.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 
-// Configure the HTTP request pipeline.
+//Configure the HTTP request pipeline.
 
-if(builder.Environment.IsDevelopment())
+if (builder.Environment.IsDevelopment() == true)
 {
     Console.WriteLine("using in mem db");
     builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMem"));
@@ -19,11 +19,11 @@ if(builder.Environment.IsDevelopment())
 else
 {
     Console.WriteLine("using sql server db");
-        builder.Services.AddDbContext<AppDbContext>
-        (opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformConn")));
+    builder.Services.AddDbContext<AppDbContext>
+      (opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConn")));
 }
 
-    builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
+builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
 
 builder.Services.AddControllers();
@@ -44,7 +44,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    PrepDb.PrepPopulation(app, builder.Environment.IsProduction());
+    PrepDb.PrepPopulation(app, builder.Environment.IsDevelopment());
 }
 else
 {
@@ -53,15 +53,26 @@ else
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapGrpcService<GrpcPlatformService>();
+app.UseRouting();
 
-app.MapGet("/Protos/platforms.proto", async context =>
+app.UseAuthorization();
+
+
+app.UseEndpoints(endpoints =>
 {
-    await context.Response.WriteAsync(File.ReadAllText("Protos/platforms.proto"));
+    endpoints.MapControllers();
+    endpoints.MapGrpcService<GrpcPlatformService>();
+
+    endpoints.MapGet("/Protos/platforms.proto", async context =>
+    {
+        await context.Response.WriteAsync(File.ReadAllText("Protos/platforms.proto"));
+    });
+
 });
+
+
 
 app.Run();

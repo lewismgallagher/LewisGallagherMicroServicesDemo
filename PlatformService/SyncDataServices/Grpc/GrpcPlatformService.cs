@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
 using Grpc.Core;
-using PlatformService.Protos;
-using PLatformService.Data;
-
+using PlatformService.Dtos;
+using PlatformService.Data;
 namespace PlatformService.SyncDataServices.Grpc
 {
-    public class GrpcPlatformService : Protos.GrpcPlatform.GrpcPlatformBase
+    public class GrpcPlatformService : GrpcPlatform.GrpcPlatformBase
     {
         private readonly IPlatformRepo _repository;
         private readonly IMapper _mapper;

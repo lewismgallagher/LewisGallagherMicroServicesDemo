@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using PLatformService.Models;
-namespace PLatformService.Data
+using PlatformService.Models;
+namespace PlatformService.Data
 {
     public static class PrepDb
     {

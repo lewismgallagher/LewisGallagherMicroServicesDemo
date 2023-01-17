@@ -4,7 +4,7 @@
 
 namespace PlatformService.Migrations
 {
-    public partial class initialmigration : Migration
+    public partial class initialmigrations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

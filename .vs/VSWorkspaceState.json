@@ -3,14 +3,14 @@
     "",
     "\\CommandsService",
     "\\CommandsService\\Protos",
-    "\\CommandsService\\SyncDataServices",
-    "\\CommandsService\\SyncDataServices\\Grpc",
     "\\PlatformService",
-    "\\PlatformService\\Properties",
+    "\\PlatformService\\Data",
+    "\\PlatformService\\Migrations",
+    "\\PlatformService\\Models",
     "\\PlatformService\\Protos",
     "\\PlatformService\\SyncDataServices",
     "\\PlatformService\\SyncDataServices\\Grpc"
   ],
-  "SelectedNode": "\\PlatformService\\appsettings.json",
+  "SelectedNode": "\\PlatformService\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

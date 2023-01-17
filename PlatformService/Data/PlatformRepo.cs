@@ -1,6 +1,6 @@
-using PLatformService.Models;
+using PlatformService.Models;
 
-namespace PLatformService.Data
+namespace PlatformService.Data
 {
     public class PlatformRepo : IPlatformRepo
     {
