@@ -9,8 +9,9 @@
     "\\PlatformService\\Models",
     "\\PlatformService\\Protos",
     "\\PlatformService\\SyncDataServices",
-    "\\PlatformService\\SyncDataServices\\Grpc"
+    "\\PlatformService\\SyncDataServices\\Grpc",
+    "\\PlatformService\\SyncDataServices\\Http"
   ],
-  "SelectedNode": "\\PlatformService\\Program.cs",
+  "SelectedNode": "\\PlatformService\\SyncDataServices\\Http\\CommandDataClient.cs",
   "PreviewInSolutionExplorer": false
 }

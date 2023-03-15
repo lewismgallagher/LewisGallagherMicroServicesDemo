@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace CommandsService.Protos {
+namespace PlatformService {
   public static partial class GrpcPlatform
   {
     static readonly string __ServiceName = "GrpcPlatform";
@@ -46,12 +46,12 @@ namespace CommandsService.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::CommandsService.Protos.GetAllRequest> __Marshaller_GetAllRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CommandsService.Protos.GetAllRequest.Parser));
+    static readonly grpc::Marshaller<global::PlatformService.GetAllRequest> __Marshaller_GetAllRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PlatformService.GetAllRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::CommandsService.Protos.PlatformResponse> __Marshaller_PlatformResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CommandsService.Protos.PlatformResponse.Parser));
+    static readonly grpc::Marshaller<global::PlatformService.PlatformResponse> __Marshaller_PlatformResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PlatformService.PlatformResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::CommandsService.Protos.GetAllRequest, global::CommandsService.Protos.PlatformResponse> __Method_GetAllPlatforms = new grpc::Method<global::CommandsService.Protos.GetAllRequest, global::CommandsService.Protos.PlatformResponse>(
+    static readonly grpc::Method<global::PlatformService.GetAllRequest, global::PlatformService.PlatformResponse> __Method_GetAllPlatforms = new grpc::Method<global::PlatformService.GetAllRequest, global::PlatformService.PlatformResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllPlatforms",
@@ -61,7 +61,7 @@ namespace CommandsService.Protos {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::CommandsService.Protos.PlatformsReflection.Descriptor.Services[0]; }
+      get { return global::PlatformService.PlatformsReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Client for GrpcPlatform</summary>
@@ -92,22 +92,22 @@ namespace CommandsService.Protos {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::CommandsService.Protos.PlatformResponse GetAllPlatforms(global::CommandsService.Protos.GetAllRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::PlatformService.PlatformResponse GetAllPlatforms(global::PlatformService.GetAllRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllPlatforms(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::CommandsService.Protos.PlatformResponse GetAllPlatforms(global::CommandsService.Protos.GetAllRequest request, grpc::CallOptions options)
+      public virtual global::PlatformService.PlatformResponse GetAllPlatforms(global::PlatformService.GetAllRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAllPlatforms, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::CommandsService.Protos.PlatformResponse> GetAllPlatformsAsync(global::CommandsService.Protos.GetAllRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::PlatformService.PlatformResponse> GetAllPlatformsAsync(global::PlatformService.GetAllRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllPlatformsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::CommandsService.Protos.PlatformResponse> GetAllPlatformsAsync(global::CommandsService.Protos.GetAllRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::PlatformService.PlatformResponse> GetAllPlatformsAsync(global::PlatformService.GetAllRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAllPlatforms, null, options, request);
       }
